@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>chi tiết dịch vụ</title>
+</head>    
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    background-color:white;
+    width:100%;
+    height:40px;
+}
+.logo{
+    width:250px;
+    height:120px;
+    margin-left: 20px;
+}
+.box{
+    margin-left: 250px ;
+    margin-top: -60px;
+}
+#search{
+    width:250px;
+    height:30px;
+    border-color:azure;
+}
+.h1{
+    color:rgb(248, 173, 93);
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -27px;
+    margin-left: 240px;
+}
+#search-btn{
+height:30px;
+width:40px;
+}
+#search:hover {
+border-color: rgb(233, 193, 119);
+}
+.co{
+margin-left: 600px;
+margin-top:-28px;
+border-color: azure;
+height:30px;
+}
+.quocgia{
+    height:25px;
+}
+.vn{
+    margin-left:770px;
+    margin-top: 22px;
+}
+.tien{
+    height:25px;
+}
+.h2{
+    margin-left: 950px;
+    margin-top: -25px;
+}
+.Login{
+    margin-top: -35px;
+    margin-left:1125px; /* Đẩy phần tử ra bên phải */
+}
+.login-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #da711b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+.Register{
+    margin-top: -22px;
+    margin-left:1275px;
+}
+.login-link:hover {
+    background-color:#ce9510;
+}
+.register-link{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dfd116;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+.register-link:hover{
+    background-color: #c5dc1a;
+}
+.cart-icon{ 
+    margin-bottom: 700px;
+    margin-left:1075px;
+}
+#xs{
+    height:25px;
+    width:90px;  
+}
+.menu_ngang{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.list {
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+    margin-right: 130px;
+    padding-right: 70px;
+}
+.item {
+    position: relative;
+    flex: 1;
+}
+.item:hover .sublist{
+    display: block;
+}
+.link{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: orange;
+    color:black;
+}
+.link:hover{
+    background-color:lemonchiffon;
+    color:crimson;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    background-color:white;
+    width:100%;
+    height:40px;
+}
+.logo{
+    width:250px;
+    height:120px;
+    margin-left: 20px;
+}
+.box{
+    margin-left: 250px ;
+    margin-top: -60px;
+}
+#search{
+    width:250px;
+    height:30px;
+    border-color:azure;
+}
+.h1{
+    color:rgb(248, 173, 93);
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -27px;
+    margin-left: 240px;
+}
+#search-btn{
+height:30px;
+width:40px;
+}
+#search:hover {
+border-color: rgb(233, 193, 119);
+}
+.co{
+margin-left: 600px;
+margin-top:-28px;
+border-color: azure;
+height:30px;
+}
+.quocgia{
+    height:25px;
+}
+.vn{
+    margin-left:770px;
+    margin-top: 22px;
+}
+.tien{
+    height:25px;
+}
+.h2{
+    margin-left: 950px;
+    margin-top: -25px;
+    
+}
+.Login{
+    margin-top: -35px;
+    margin-left:1125px; /* Đẩy phần tử ra bên phải */
+}
+.login-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #da711b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+.Register{
+    margin-top: -22px;
+    margin-left:1275px;
+}
+.login-link:hover {
+    background-color:#ce9510;
+}
+.register-link{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dfd116;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+.register-link:hover{
+    background-color: #c5dc1a;
+}
+.cart-icon{ 
+    margin-bottom: 700px;
+    margin-left:1075px;
+}
+#xs{
+    height:25px;
+    width:90px;  
+}
+.menu{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.list {
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+    margin-right: 130px;
+    padding-right: 70px;
+}
+.item {
+    position: relative;
+    flex: 1;
+}
+.item:hover .sublist{
+    display: block;
+}
+.link,
+.sublink {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color:darkorange ;
+    color:black;
+}
+.link:hover,
+.sublink:hover {
+    background-color:lemonchiffon;
+    color:crimson;
+}
+.sublist {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    display: none;
+}
+.hoian{
+    width:1400px;
+    height:500px;
+    margin-left: 35px;
+}
+.than{
+        padding-left: 100px;
+        padding-right: 100px;
+        height: 800px;
+    }
+.than1{
+    display: flex;
+    justify-content:center;
+}
+.than1 ul{
+    padding-left: 50px;
+}
+.than1 img{
+    width:300px;
+}
+.than1 input{
+    height: 25px;
+    width: 40px;
+}
+div.stars {
+    width: 270px;
+    display: inline-block;
+  }
+   
+  input.star { display: none; }
+   
+  label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+  }
+   
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+  }
+   
+  input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+  }
+   
+  input.star-1:checked ~ label.star:before { color: #F62; }
+   
+  label.star:hover { transform: rotate(-15deg) scale(1.3); }
+   
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }
+  .than2{
+    display: flex;
+    justify-content:space-evenly;
+  }
+  .than2 ul input{
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-size: 15px;
+  }
+  p{
+    font-size: 18px;
+  }
+  H2{
+     padding-left: 100px;
+  }
+  
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="TRAVELING.JPG" class="logo">
+        </div>
+        <div class="box">
+                <input type="search" id="search" placeholder="Tìm kiếm điểm đến, hoạt động..." />
+                <button id="search-btn"><i class = "fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="co">
+            <select class="quocgia">
+            <option>Việt Nam</option>
+            <option> Thái Lan</option>
+            <option> Lào</option>
+            <option>Hàn Quốc</option>
+            <option>Trung Quốc  </option>
+            <option>Nhật Bản </option>
+            <option>Mỹ</option>
+            <option>Canada </option>
+            <option> Campuchia</option>
+            </select>
+            </div>
+            
+          </div>
+          <div class="vn">
+            <select class="tien">
+                <option>VND-Đồng  </option>
+                <option>THB-Bạt Thái</option>
+                <option>LAK-Kip Lào</option>
+                <option>KRW-Won Hà Quốc </option>
+                <option>CNY-Nhân Dân Tệ </option>
+                <option>JPY-Yên Nhật</option>
+                <option>USD-Dollar Mỹ</option>
+                <option>CAD-Đô Canada</option>
+                <option>KHR-Riel Campuchia</option>
+            </select>
+          </div>
+          <div class="h2">
+            <button>Xem gần đây</button>
+          </div class="cart">
+          <a href="#" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+        </div>
+          
+          <div class="dangki">
+          <div class="Login">
+            <a href="file:///D:/ThucTapCoSoNganh/login.html" class="login-link">Log In</a>
+        </div>
+        <div class ="Register">
+            <a href="file:///D:/ThucTapCoSoNganh/register.html" class="register-link">Sign Up</a>
+        </div>
+        </div>
+        
+    </div>
+    
+    <div class="menu_ngang">
+      <ul class="list">
+          <li class="item "><a href="#" class="link ">Bạn muốn đi đâu?</a>
+          </li>   
+          <li class="item"><a href="#" class="link">Tour và trải nghiệm</a>   
+          </li>
+          <li class="item"><a href="#" class="link">Vé tham quan</a>
+          </li>
+          <li class="item"><a href="#" class="link">Khách sạn</a></li>
+          <li class="item"><a href="#" class="link">Di chuyển</a>
+          </li>
+      </ul>
+  </div>
+
+  <br>
+  <h2> TOUR VÀ TRẢI NGHIỆM</h2>
+  <BR>
+  <div class="than">
+    <div class="than1">
+        <ul>
+            <li><a href=""><img src="anh_chi_tiet.jpg"></a></li>
+        </ul>
+        <ul>
+            <p>Tour đi bộ ẩm thực đường phố Hà Nội và xem múa rối nước.</p>
+            <p>Mã Tour: 202400108</p>
+            <b><p><span style="color: red;">584.063 <u>đ</u></span></p></b>
+            <b><p style="color: rgb(247, 210, 62);">4.8 *</p></b>
+            <p>Số lượng người : <input type="number" name="txtTuoi" id="txtTuoi" min="1" max="30" step="1" /></p>
+                
+              
+        </ul>
+    </div>
+    <br>
+    <br><br>
+    <div class="than2">
+        <ul>
+            <input type="button" value="Thêm vào giỏ hàng" style="background-color: rgb(245, 154, 18);">
+        </ul>
+        <ul>
+            <input type="button" value="Đặt ngay" style="background-color:crimson;">
+        </ul>
+    </div>
+    <div >
+    <br><br>
+    <li style="font-size: 20px;"><b> Mô tả:</b></li>
+    <p>- Tham quan tour nửa ngày quanh khu Phố Cổ nhộn nhịp tại Hà Nội cùng hướng dẫn viên địa phương nói tiếng Anh <br>
+        - Đi bộ dạo quanh những con đường <br>
+        - Bước vào những con hẻm nhỏ ẩn mình và khám phá những nhà hàng và quầy ăn địa phương với những món ngon miệng <br>
+        - Xem buổi diễn Múa Rối Nước truyền thống và tìm hiểu đời sống hàng ngày của người nông dân địa phương</p>
+      </div>  
+      <li style="font-size: 20px;"> <b>Đánh giá:</b></li>
+    <div class="stars">
+        <form action="">
+          <input class="star star-4" id="star-4" type="radio" name="star"/>
+          <label class="star star-4" for="star-4"></label>
+          <input class="star star-3" id="star-3" type="radio" name="star"/>
+          <label class="star star-3" for="star-3"></label>
+          <input class="star star-2" id="star-2" type="radio" name="star"/>
+          <label class="star star-2" for="star-2"></label>
+          <input class="star star-1" id="star-1" type="radio" name="star"/>
+          <label class="star star-1" for="star-1"></label>
+        </form>
+      </div>
+  </div>
+</body>

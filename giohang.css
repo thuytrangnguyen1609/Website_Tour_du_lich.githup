@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+.header{
+    background-color: white;
+    width:100%;
+    height:40px;
+
+}
+.logo{
+    width:250px;
+    height:120px;
+    margin-left: 20px;
+}
+.box{
+    margin-left: 250px ;
+    margin-top: -60px;
+}
+#search{
+    width:250px;
+    height:30px;
+    border-color:azure;
+}
+.h1{
+    color:rgb(248, 173, 93);
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -27px;
+    margin-left: 240px;
+}
+#search-btn{
+height:30px;
+width:40px;
+}
+#search:hover {
+border-color: rgb(233, 193, 119);
+}
+.co{
+margin-left: 600px;
+margin-top:-28px;
+border-color: azure;
+height:30px;
+}
+.quocgia{
+    height:25px;
+}
+.vn{
+    margin-left:770px;
+    margin-top: 22px;
+}
+.tien{
+    height:25px;
+}
+.h2{
+    margin-left: 950px;
+    margin-top: -25px;
+
+
+    
+}
+.Login{
+    margin-top: -35px;
+    margin-left:1125px; /* Đẩy phần tử ra bên phải */
+}
+
+.login-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #da711b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+
+.Register{
+    margin-top: -22px;
+    margin-left:1275px;
+}
+
+.login-link:hover {
+    background-color:#ce9510;
+}
+
+.register-link{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dfd116;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+.register-link:hover{
+    background-color: #c5dc1a;
+}
+.cart-icon{
+    
+    margin-bottom: 700px;
+    margin-left:1075px;
+}
+
+
+#xs{
+    height:25px;
+    width:90px;
+    
+}
+.menu_ngang{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.list {
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+    margin-right: 130px;
+    padding-right: 70px;
+}
+.item {
+    position: relative;
+    flex: 1;
+}
+.item:hover .sublist{
+    display: block;
+}
+.link,
+.sublink {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color:rgb(238, 181, 56) ;
+    color:black;
+}
+.link:hover,
+.sublink:hover {
+    background-color:lemonchiffon;
+    color:crimson;
+}
+.sublist {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    display: none;
+}
+
+.a1{
+    width:35px;
+    margin-left: 300px;
+    margin-top: 15px;
+    height:20px;
+}
+.a2{
+    width:35px;
+    margin-left: 450px;
+    margin-top: 15px;
+    height:20px;
+}
+.anh{
+width:250px;
+height:120px;
+margin-left: 300px;
+margin-top: 30px;
+}
+.c1{
+    margin-left: 220px;
+    height:20px;
+}
+.content{
+    margin-top: -170px;
+}
+.b1{
+    font-size: 20px;
+    margin-left: 600px;
+    margin-top: -100px;
+  
+   
+}
+.d1{
+    font-size: 20px;
+    margin-left: 600px;
+    color:red;
+    
+
+}
+.b2{
+    font-size: 20px;
+    margin-left: 600px;
+}
+.item_1{
+    margin-top: 60px;
+}
+.anh1{
+    width:250px;
+    height:120px;
+    margin-left: 300px;
+    margin-top: 60px;
+    }
+    .c2{
+        margin-left: 220px;
+        height:20px;
+    }
+    .content_1{
+        margin-top: -170px;
+    }
+    .b3{
+        font-size: 20px;
+        margin-left: 600px;
+        margin-top: -100px;
+      
+       
+    }
+    .d2{
+        font-size: 20px;
+        margin-left: 600px;
+        color:red;
+    }
+    .b4{
+        font-size: 20px;
+        margin-left: 600px;
+    }
+    .sua{
+        margin-left: 350px;
+        height:30px;
+        width:60px;
+    }
+    .xoa{
+        margin-left: 50px;
+        height:30px;
+        width:60px;
+    }
+    .thanhtien{
+        margin-left: 340px;
+        
+    }
+    .text{
+        width:150px;
+        margin-left: 5px;
+        height:30px;
+    }
+    .sua1{
+        margin-left: 350px;
+        height:30px;
+        width:60px;
+    }
+    .xoa1{
+        margin-left: 50px;
+        height:30px;
+        width:60px;
+    }
+    .thanhtien1{
+        margin-left: 340px;
+
+    }
+    .text{
+        width:150px;
+        margin-left: 5px;
+        height:30px;
+    }
+    .tongtien{
+        margin-top: 90px;
+        justify-content: center;
+        align-content: center;
+        margin-left: 500px;
+    }
+    .text1{
+        width:350px;
+        margin-left: 5px;
+        height:20px;
+    }
+    .thanhtoan{
+        margin-left: 150px;
+        height:30px
+        
+    }

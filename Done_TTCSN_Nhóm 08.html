@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Done TTCSN - nhóm 08</title>
+</head>    
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*<link rel="stylesheet" href="demo.css">*/
+.header{
+    background-color:white;
+    width:100%;
+    height:40px;
+}
+.logo{
+    width:250px;
+    height:120px;
+    margin-left: 20px;
+}
+.box{
+    margin-left: 250px ;
+    margin-top: -60px;
+}
+#search{
+    width:250px;
+    height:30px;
+    border-color:azure;
+}
+.h1{
+    color:rgb(248, 173, 93);
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -27px;
+    margin-left: 240px;
+}
+#search-btn{
+height:30px;
+width:40px;
+}
+#search:hover {
+border-color: rgb(233, 193, 119);
+}
+.co{
+margin-left: 600px;
+margin-top:-28px;
+border-color: azure;
+height:30px;
+}
+.quocgia{
+    height:25px;
+}
+.vn{
+    margin-left:770px;
+    margin-top: 22px;
+}
+.tien{
+    height:25px;
+}
+.h2{
+    margin-left: 950px;
+    margin-top: -25px;
+    
+}
+.Login{
+    margin-top: -35px;
+    margin-left:1125px; /* Đẩy phần tử ra bên phải */
+}
+.login-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #da711b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+.Register{
+    margin-top: -22px;
+    margin-left:1275px;
+}
+.login-link:hover {
+    background-color:#ce9510;
+}
+.register-link{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dfd116;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+.register-link:hover{
+    background-color: #c5dc1a;
+}
+.cart-icon{ 
+    margin-bottom: 700px;
+    margin-left:1075px;
+}
+#xs{
+    height:25px;
+    width:90px;  
+}
+.menu_ngang{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.list {
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+    margin-right: 130px;
+    padding-right: 70px;
+}
+.item {
+    position: relative;
+    flex: 1;
+}
+.item:hover .sublist{
+    display: block;
+}
+.link,
+.sublink {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: orange;
+    color:black;
+}
+.link:hover,
+.sublink:hover {
+    background-color:lemonchiffon;
+    color:crimson;
+}
+.sublist {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    display: none;
+}
+
+/*menu*/
+
+.hoian{
+    width:1400px;
+    height:500px;
+    margin-left: 100px;
+}
+.than{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.than1 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.than1 ul li img{
+    width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.than1 ul li img:hover,
+.than1 ul li img:focus,
+.than1 ul li img:active {
+    transform: scale(1.1);
+}
+.than2 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.than2 ul li{
+    width: 250px;
+    display: inline-block;
+}
+.than3 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.than3 ul li img{
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.than3 ul li img:hover,
+.than3 ul li img:focus,
+.than3 ul li img:active {
+    transform: scale(1.1);  
+}
+.than3 a{
+    text-decoration: none;
+    padding-top: 30px;
+}
+
+header{
+  width:80%;
+  margin:0 auto;
+}
+header>h2{
+  color:#212121;
+  font-size: 28px;
+  font-weight:600;
+  line-height:36px;
+}
+.content__img img{
+  width:100%;
+  height:400px;
+  border-radius:10px;
+}
+.content__item{
+  position:relative;
+  margin:40px 0;
+}
+.content__item .content__text{
+  max-width:40%;
+  position:absolute;
+  top:0;
+  left:25%;
+  color:white;
+  padding:70px 0;
+}
+.content__text h2{
+  font-size:30px;
+  font-weight:600;
+  line-height:1.32;
+  margin:0 0 16px;
+}
+.content__text h5{
+  margin-top:70px;
+  font-size:20px;
+}
+.content__text .info{
+  margin:12px;
+}
+.content__text .info input{
+  border-radius:12px;
+  color:#212121;
+  font-size:16px;
+  min-height:44px;
+  width:70%;
+  padding:0 20px;
+  margin:0px 10px 0  -10px;
+  border:none;
+}
+.content__text .info button{
+  border-radius:12px;
+  color:#333232;
+  font-size:16px;
+  min-height:44px;
+  width:20%;
+  padding:0 20px;
+  border:none;
+  cursor: pointer;
+}
+.container{
+  width:80%;
+  margin:0 auto; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:25px;
+}
+.container__item{
+  width:100%;
+  border:1px solid rgb(225, 222, 222);
+  border-radius:10px;
+  padding:20px 0;
+  cursor: pointer;
+  transition:.5s;
+}
+.container__item:hover{
+  transform: translateY(-6px);
+  box-shadow:0 4px 12px 0 rgba(0, 0, 0, .12); 
+}
+.container__img{
+  display:flex; 
+  align-items:center;
+  justify-content: center;
+}
+.container__item img{
+  height:166px;
+  width:230px;
+}
+.container__title h2{
+  font-size:24px;
+  font-weight: 600;
+  line-height:32px;
+  margin:23px 0 0 ;
+  text-align:center;
+}
+.container__title p{
+  text-align:center;
+  font-size:16px;
+  line-height:21px;
+  margin: 8px 0 0 ;
+  color: #212121;
+}
+.container__title button{
+  
+  font-size:600px;
+  line-height:20px;
+  font-size:14px;
+  padding:6px 14px;
+  margin-top:20px;
+  border-radius:10px;
+}
+.partner{
+  width:80%;
+  margin:0px auto;
+}
+.partner h1{
+  font-size:32px;
+  margin:72px 0 32px;
+  font-weight: 500;
+}
+.partner__item img{
+  width:106px;
+  height:53px;
+}
+.partner__content{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;;
+}
+.partner__item{
+  margin:0 42px 32px 0;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+.partner__item:hover{
+  filter: none;
+}
+
+.media{
+  width:80%;
+  margin:0 auto;
+}
+.media h1{
+  font-size:32px;
+  margin:72px 0 32px;
+  font-weight: 500;
+}
+
+.wise {
+ width:80%;
+ margin:0 auto;
+}
+.wise h1{
+  font-size:32px;
+  margin:72px 0 32px;
+  font-weight: 500;
+}
+.wise h3{
+  color:#212121;
+  font-weight: 600;
+  line-height:24px;
+  margin: 0 0 16px;
+}
+.menu{
+  display:flex;
+  flex-wrap: wrap;
+  margin:0 -12px -12px -12px;
+}
+.menu .menu__item{
+  list-style:none;
+  font-size:16px;
+  font-weight: 500;
+  line-height:1.5;
+  margin-bottom:12px;
+}
+.menu a{
+  border-right:1px solid #e6e6e6;
+  color:#757575;
+  display:inline-block;
+  height:12px;
+  line-height:12px;
+  padding:0 12px;
+  text-decoration:none;
+}
+footer{
+  margin:60px 0;
+}
+.border{
+  border-top:1px solid #333;
+  opacity:.1;
+}
+.infor{
+  width:80%;
+  margin:50px auto;
+  display:flex;
+  justify-content: space-around;
+}
+
+.infor__item h4{
+  margin-bottom:30px;
+}
+.infor__item p{
+  margin:8px 0;
+}
+.infor__item a{
+  text-decoration:none;
+  cursor: pointer;
+  font-size:14px;
+  color:#757575;
+}
+.infor__item .bank{
+  display:flex;
+  flex-wrap: wrap;
+  width:350px;
+}
+.bank__item{
+  border:1px solid #eee;
+  list-style:none;
+  border-radius:6px;
+  margin:10px 12px;
+  
+}
+.bank__item img{
+  width:40px;
+  height:25px;
+}
+.text{
+  width:80%;
+  margin:50px auto;
+}
+/*Trang chủ*/
+</style>
+<body>
+<div class="header">
+  <div class="logo">
+    <img src="TRAVELING.JPG" class="logo">
+  </div>
+  <div class="box">
+    <input type="search" id="search" placeholder="Tìm kiếm điểm đến, hoạt động..." />
+    <button id="search-btn"><i class = "fa-solid fa-magnifying-glass"></i></button>
+  </div>
+  <div class="co">
+    <select class="quocgia">
+      <option>Việt Nam</option>
+      <option> Thái Lan</option>
+      <option> Lào</option>
+      <option>Hàn Quốc</option>
+      <option>Trung Quốc  </option>
+      <option>Nhật Bản </option>
+      <option>Mỹ</option>
+      <option>Canada </option>
+      <option> Campuchia</option>
+    </select>
+  </div>
+</div>
+
+<div class="vn">
+  <select class="tien">
+    <option>VND-Đồng  </option>
+    <option>THB-Bạt Thái</option>
+    <option>LAK-Kip Lào</option>
+    <option>KRW-Won Hà Quốc </option>
+    <option>CNY-Nhân Dân Tệ </option>
+    <option>JPY-Yên Nhật</option>
+    <option>USD-Dollar Mỹ</option>
+    <option>CAD-Đô Canada</option>
+    <option>KHR-Riel Campuchia</option>
+ </select>
+</div>
+
+<div class="h2">
+  <button>Xem gần đây</button>
+  </div class="cart">
+    <a href="file:///D:/C%C6%A1%20S%E1%BB%9F%20ng%C3%A0nh/giohang.html" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    </a>
+</div>
+          
+<div class="dangki">
+  <div class="Login">
+    <a href="file:///D:/ThucTapCoSoNganh/login.html" class="login-link">Log In</a>
+  </div>
+  <div class ="Register">
+    <a href="file:///D:/ThucTapCoSoNganh/register.html" class="register-link">Sign Up</a>
+  </div>
+</div>       
+    
+<div class="menu_ngang">
+  <ul class="list">
+  <li class="item "><a href="#" class="link ">Bạn muốn đi đâu?</a>
+  <ul class="sublist">
+    <li class="subitem"><a href="#" class="sublink">Điểm đến hàng đầu</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Đông Nam Á</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Đông Á</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Nam Á/Trung Đông</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Châu Đại Dương/Châu Phi</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Châu Mỹ</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Bắc Mỹ</a></li>
+  </ul>
+  </li>   
+  <li class="item"><a href="file:///D:/C%C6%A1%20S%E1%BB%9F%20ng%C3%A0nh/danh_muc_tour&tn.html" class="link">Tour và trải nghiệm</a>
+  <ul class="sublist">
+    <li class="subitem"><a href="#"  class="sublink">Tour</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Du thuyền</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Massage & Suối nước nóng</a></li>
+    <li class="subitem"><a href="#"  class="sublink">Hoạt động dưới nước</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Phiêu liêu & khám phá thiên nhiên</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Trải nghiệm văn hóa</a></li>
+  </ul>        
+  </li>
+  <li class="item"><a href="file:///D:/C%C6%A1%20S%E1%BB%9F%20ng%C3%A0nh/danh_muc_ve_tham_quan.html" class="link">Vé tham quan</a>
+  <ul class="sublist">        
+  <li class="subitem"><a href="#"  class="sublink">Công viên giải trí</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Công viên nước</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Bảo tàng</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Công viên & Vườn bách thảo</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Sở thú & Thủy cung</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Cáp treo</a></li>  
+  <li class="subitem"><a href="#"  class="sublink">Di tích lịch sử</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Vui chơi trong nhà</a></li>
+  <li class="subitem"><a href="#"  class="sublink">Vé tham quan</a></li>
+  </ul>
+  </li>
+          <li class="item"><a href="file:///D:/C%C6%A1%20S%E1%BB%9F%20ng%C3%A0nh/danh_muc_khach_san.html" class="link">Khách sạn</a></li>
+          <li class="item"><a href="file:///D:/C%C6%A1%20S%E1%BB%9F%20ng%C3%A0nh/danh_muc_di_chuyen.html" class="link">Di chuyển</a>
+              <ul class="sublist">
+                  
+                      <li class="subitem"><a href="#"  class="sublink">Tàu hỏa</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Vé tàu JR Pass</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Vé tàu châu Âu</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Vé tàu châu Âu</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Vé tàu châu Âu</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Vé & Thẻ tàu điện ngầm</a></li>
+                      <li class="subitem"><a href="#"  class= "sublink">Xe sân bay</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Tàu & Xe buýt sân bay</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Phà</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Xe buýt</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Xe máy & xe đạp</a></li>
+                      <li class="subitem"><a href="#"  class="sublink">Thuê xe có tài xế riêng</a></li>
+                  
+              </ul>
+          </li>
+      </ul>
+  </div>
+  <div class="content_img">
+    <img src="quangnam.jpg" alt="" class="hoian">
+  </div>
+  
+    <div class="than">
+    <div class="than1">
+        <h1>ƯU ĐÃI HẤP DẪN</h1><br>
+        <ul>
+           <li><a href=""></a><img src="d:\Cơ Sở ngành\anh1.png" alt=""></li>
+           <li><a href=""></a><img src="d:\Cơ Sở ngành\anh2.png" alt=""></li>
+           <li><a href=""></a><img src="d:\Cơ Sở ngành\anh3.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="than2">
+        <br>
+        <h1>Vì sao bạn nên chọn Traveling?</h1><br>
+        <ul>
+            <li><a href=""><img src="d:\Cơ Sở ngành\anh4.png" alt=""></a>
+            <br><h3>Vô vàn lựa chọn</h3><p>Tìm kiếm niềm vui với gần nửa triệu điểm tham quan, phòng khách sạn và nhiều trải nghiệm thú vị</p></li>
+
+            <li><a href=""><img src="d:\Cơ Sở ngành\anh5.png" alt=""></a>
+            <br><h3>Chơi vui, giá tốt</h3><p>Trải nghiệm chất lượng với giá tốt. Tích luỹ Travel credit để được thêm ưu đãi</p></li>
+
+            <li><a href=""><img src="d:\Cơ Sở ngành\anh6.png" alt=""></a>
+            <br><h3>Dễ dàng và tiện lợi</h3><p>Đặt vé xác nhận ngay, miễn xếp hàng, miễn phí hủy, tiện lợi cho bạn tha hồ khám phá</p></li>
+
+            <li><a href=""><img src="d:\Cơ Sở ngành\anh7.png" alt=""></a>
+            <br><h3>Đáng tin cậy</h3><p>Tham khảo đánh giá chân thực. Dịch vụ hỗ trợ tận tình, đồng hành cùng bạn mọi lúc, mọi nơi</p></li>
+            
+        </ul>
+    </div>
+    <div class="than3">
+        <br>
+        <h1>Các hoạt động nổi bật</h1> <br><br>
+        <ul>
+            <li><a href=""><img src="d:\Cơ Sở ngành\anh8.png" alt="" width="270px"></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\anh9.png" alt="" width="270px"></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\anh10.png" alt="" width="270px"></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\anh11.png" alt="" width="270px"></a></li>
+        </ul><br>
+        <ul>
+            <a href="https://www.klook.com/vi/popular/all/?spm=Home.Popular%3Aany%3A%3APopularActivities%3AViewMoreBtn&clickId=6688623393"><input type="button" value="Xem thêm..." style="font-size: 25px; width: 250px;"></a>
+        </ul> 
+        <br>
+        <br><h1>Hot nhất tại Traveling</h1>
+        <ul><br>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 132807.png" alt=""  width="300px"></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 133228.png" alt=""  width="300px"></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 133523.png" alt=""  width="300px"></a></li>
+            
+        </ul>
+        <br>
+        <h1>Trải nghiệm cho mọi người</h1>
+        <br><ul>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 133742.png" alt=""></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 133935.png" alt=""></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 133957.png" alt=""></a></li>
+        </ul>
+        <br>
+        <h1>Bạn muốn đi đâu chơi?</h1>
+        <br>
+        <ul>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 134253.png" alt=""></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 134314.png" alt=""></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 134322.png" alt=""></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 134329.png" alt=""></a></li>
+            <li><a href=""><img src="d:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 134344.png" alt=""></a></li>
+            <li><a href=""><img src="D:\Cơ Sở ngành\Ảnh chụp màn hình 2024-04-14 134350.png" alt=""></a></li>
+        </ul><br>
+        <ul>
+            <a href="https://www.klook.com/vi/"><input type="button" value="Xem thêm..." style="font-size: 25px; width: 250px;"></a>
+        </ul>
+    </div>
+    </div>
+    <header>
+        <h1>
+          Thêm nhiều khám phá thú vị
+        </h1>
+        <div class="header__content">
+          <div class="content__item">
+            <div class="content__img">
+              <img
+                src="https://images.unsplash.com/photo-1505415055475-143e29dd0b6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNtYXJ0cGhvbmV8ZW58MHx8MHx8fDA%3D"
+                alt="anh1">
+            </div>
+            <div class="content__text">
+              <h2>Giảm tới 250.000VND cho đơn <br> đầu tiên trên app</h2>
+              <p>Thêm ưu đãi, thêm tiết kiệm khi đặt hàng qua ứng dụng!</p>
+              <h5>Nhận & gửi magic link đến email của bạn</h5>
+              <div class="info">
+                <input type="text" placeholder="Email">
+                <button>Gửi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="container">
+        <div class="container__item">
+          <div class="container__img">
+            <img src="https://res.klook.com/image/upload/v1640179720/veeon5jzqyjccj5m3lkg.webp" alt="anh2">
+          </div>
+          <div class="container__title">
+            <h2>Xem blog của Traveling</h2>
+            <p>Klook gợi ý cho bạn các xu hướng du lịch, lịch trình <br> chi tiết và các mẹo hữu ích </p>
+            <div style="text-align:center">
+              <button>Xem ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="container__item">
+          <div class="container__img">
+            <img src="https://res.klook.com/image/upload/v1640179766/arto4pac628jzdsuu3df.webp" alt="anh2">
+          </div>
+          <div class="container__title">
+            <h2>Tiết kiếm hơn với credit</h2>
+            <p>Tìm hiểu cách hoạt động với giá siêu tiết kiệm <br> bằng cách để lại đánh giá </p>
+            <div style="text-align:center">
+              <button>Credit là gì?</button>
+            </div>
+          </div>
+        </div>
+        <div class="container__item">
+          <div class="container__img">
+            <img src="https://res.klook.com/image/upload/v1640179875/ggxmmubhiq9nxkbobcro.webp" alt="anh2">
+          </div>
+          <div class="container__title">
+            <h2>Nhận ưu đãi khi mời bạn bè</h2>
+            <p>Sau khi bạn của bạn đăng ký và hoàn thành đơn <br>hàng đầu tiên, bạn sẽ nhận 100,000đ điểm thưởng </p>
+            <div style="text-align:center">
+              <button>Xem ngay</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="partner">
+        <h1>ĐỐI TÁC</h1>
+        <div class="partner__content">
+          <div class="partner__item">
+            <a href="#">
+              <img src="https://res.klook.com/image/upload/v1665390856/home/partner/i_shangrila_en_2x_fxx30g.webp" alt="#">
+            </a>
+          </div>
+          <div class="partner__item">
+            <a href="#">
+              <img style="width:118px;height:31px" src="https://res.klook.com/image/upload/v1665390858/home/partner/i_airasia_en_2x_xlouay.webp" alt="#">
+            </a>
+          </div>
+          <div class="partner__item">
+            <a href="#">
+              <img style="width:84px; height:73px" src="https://res.klook.com/image/upload/v1665390860/home/partner/i_getgo_2x_gn1eea.webp" alt="#">
+            </a>
+          </div>
+          <div class="partner__item">
+            <a href="#">
+              <img style="width:140px; height:16px" src="https://res.klook.com/image/upload/v1665390862/home/partner/i_reserve_google_2x_nmzaim.webp"
+                alt="#">
+            </a>
+          </div>
+          <div class="partner__item">
+            <a href="#">
+              <img style="width:115px; height:37px;" src="https://res.klook.com/image/upload/v1665390865/home/partner/i_iventure_2x_fvhjns.webp" alt="#">
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="border"></div>
+        <div class="infor">
+          <div style="margin-left:-70px;" class="infor__item">
+            <h4>VỀ TRAVELING</h4>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Cơ hội nghề nghiệp</a></p>
+            <p> <a href="#">Phiếu quà tặng Traveling</a></p>
+          </div>
+          <div class="infor__item">
+            <h4>ĐỐI TÁC</h4>
+            <p><a href="#">Đăng ký nhà cung cấp</a></p>
+            <p><a href="#">Đối tác đăng nhập</a></p>
+            <p><a href="#">Đối tác liên kết</a></p>
+            <p><a href="#">Chương tình cho người nổi tiếng</a></p>
+          </div>
+          <div class="infor__item">
+            <h4>ĐIỀU KHOẢN SỬ DỤNG</h4>
+            <p><a href="#">Điều khoản sử dụng</a></p>
+            <p><a href="#">Chính sách bảo mật của Traveling</a></p>
+            <p><a href="#">Chính sách Cookie</a></p>
+          </div>
+        </div>
+        <div class="border"></div>
+        <div class="text">@2022-2026 (K17) Traveling. TTCSN-NHÓM 08</div>
+      </footer>
+</body>
+</html>
